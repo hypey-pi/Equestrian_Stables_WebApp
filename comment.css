@@ -1,0 +1,217 @@
+.contact {
+  width: 100%;
+  height: 1100px;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper {
+  width: 55%;
+  height: 750px;
+  /* width: 55%;
+  height: 900px; */
+  display: flex;
+  box-shadow: 0 48px 110px rgba(0, 0, 0, 0.5);
+}
+
+.contact-right {
+  width: 65%;
+  background-color: #eee;
+  padding: 48px 160px 160px 160px;
+}
+
+.contact-heading {
+  font-family: "Baloo Da 2", serif;
+  /* font-size: 100px; */
+  font-size: 37.5px; 
+  font-weight: 300;
+  color: #272727;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.contact-right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+.field {
+  width: 720px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed #636363;
+  margin: 30px 0;
+  padding: 16px 16px 16px 0;
+  font-family: "Muli", serif;
+  font-size: 22px;
+  color: #4b4b4b;
+}
+
+.input-group input {
+  height: 50px;
+}
+
+.input-group textarea {
+  max-height: 7rem;
+  max-width: 45rem;
+}
+
+.field:focus {
+  border-bottom-style: solid;
+}
+
+.input-group label {
+  position: absolute;
+  left: 0;
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.8rem;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.input-label {
+  bottom: 3rem;
+}
+
+.message {
+  bottom: 6rem;
+}
+
+.field:focus ~ label {
+  transform: translateY(-3rem);
+  font-size: 1.2rem;
+}
+.submit-btn {
+  width: 20rem;
+  height: 5rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 2rem;
+  font-family: "Muli", serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.comments-container {
+  /* max-width: 600px;
+  font-size: 20px; */
+  width: 60%;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.comments h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.comments-list {
+  margin-bottom: 20px;
+}
+
+.comment {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment p {
+  margin-bottom: 5px;
+}
+
+.comment .delete-btn {
+  background-color: #f52828;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#comment-input::placeholder {
+  color: #aaa;
+}
+
+#comment-input:focus {
+  outline: none;
+  border-color: #5e97d0;
+}
+
+@media (max-width: 900px) {
+  .contact-wrapper {
+    width: 80%; 
+  }
+
+  .contact-right {
+    padding: 48px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    height: auto; 
+  }
+
+  .contact-wrapper {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .contact-right {
+    width: 100%; 
+    padding: 48px; 
+  }
+}
+@media (max-width: 720px) {
+  .contact-wrapper {
+    width: 80%; 
+  }
+
+  .contact-right {
+    padding: 48px; 
+  }
+}
+@media (max-width: 719px) {
+  .contact-wrapper {
+    width: 80%; 
+  }
+
+  .contact-right {
+    padding: 48px; 
+  }
+}
+@media (max-width: 1200px) {
+  .contact-wrapper {
+    width: 80%; 
+  }
+
+  .contact-right {
+    padding: 48px; 
+  }
+}
